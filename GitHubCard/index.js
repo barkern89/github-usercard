@@ -9,7 +9,8 @@ axios.get('https://api.github.com/users/barkern89')
     console.log(response); //output: dataObject{}
   })
   .catch(error => {
-    console.log(error);
+    //handling the error recieved back from our API request
+    console.log(error); //output: errorMesage
   })
 
 /* Step 2: Inspect and study the data coming back, this is YOUR 
@@ -53,12 +54,19 @@ const followersArray = [];
   </div>
 </div>
 
+
 */
 
-/* List of LS Instructors Github username's: 
+/* List of LS Instructors Github usernames: 
   tetondan
   dustinmyers
   justsml
   luishrd
   bigknell
 */
+
+function cardMaker(ghData){
+
+  const cardDiv = document.querySelectorAll
+
+}
