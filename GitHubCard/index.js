@@ -3,6 +3,16 @@
            https://api.github.com/users/<your name>
 */
 
+axios.get('https://api.github.com/users/barkern89')
+  .then(response => {
+    //doing something with the data recieved from GH API
+    console.log(response); //output: dataObject{}
+  })
+  .catch(error => {
+    //handling the error recieved back from our API request
+    console.log(error); //output: errorMesage
+  })
+
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
@@ -44,12 +54,19 @@ const followersArray = [];
   </div>
 </div>
 
+
 */
 
-/* List of LS Instructors Github username's: 
+/* List of LS Instructors Github usernames: 
   tetondan
   dustinmyers
   justsml
   luishrd
   bigknell
 */
+
+function cardMaker(ghData){
+
+  const cardDiv = document.querySelectorAll
+
+}
